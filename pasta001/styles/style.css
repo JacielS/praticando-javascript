@@ -1,18 +1,29 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding: 5px;
+}
+body {
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
 }
 #lampada {
-    width: 400px;
-    height: 200px;
-    margin: 10px;
     padding: 10px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.082);
 }
 #mudaconteudo {
-    width: 400px;
-    height: 100px;
-    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+#textoaltera {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.082); 
+}
+#hideelement {
     padding: 10px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.082);

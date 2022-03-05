@@ -8,17 +8,32 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h2>O que posso fazer com JavaScript</h2>
+    <h1>O que posso fazer com JavaScript?</h1>
+    <h2>Mudar o conteúdo HTML</h2>
     <div id="mudaconteudo">
         <p id="demo">Java Script pode mudar o conteúdo do HTML.</p>
         <button type="button" onclick=mudar()>Click Me!</button>
     </div>
+    <h2>Mudar o atributo src de uma imagem.</h2>
     <div id="lampada">
         <img id="minha imagem" src="imagens/pic_bulboff.gif" alt="Lampada apagada">
         <button onclick="acender()">Acenda a Lâmpada</button>
         <button onclick="apagar()">Apague a Lâmpada</button>
     </div>
+    <h2>Alterar os estilos</h2>
+    <div id="textoaltera">
+        <p id="textoalterar">Esse texto vai ter seu estilo alterado com JavaScript.</p>
+        <button onclick="alterarestilo()">Click Here </button>
+        <script src="scripts/script.js"></script>
+    </div>
+    <h2>Esconder e mostrar elemento HTML</h2>
+    <div id="hideelement">
+        <p id="elementtohide">Este texto será escondido e depois mostrado.</p>
+        <button onclick="hide()">Click Here to Hide</button>
+        <button onclick="show()">Clique aqui para mostrar</button>
+    </div>
+    
 
-    <script src="scripts/script.js"></script>
+    </div>
 </body>
 </html>
