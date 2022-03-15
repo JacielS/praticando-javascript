@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects In JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(190, 209, 203);
+        }
+        p#content:hover {
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+            border: 3px solid rgb(255, 244, 244);
+            background-color:rgb(48, 48, 48);
+            transition: 1s;
+        }
+        p#content {
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: fit-content;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            padding: 10px;
+        }
+        div#container{            
+            background-color: rgb(48, 48, 48);
+            height: 50px;
+            position: right center;
+            color: gray;
+            font-weight: bold;
+            padding-top: 25px;
+            padding-right: 25px;
+            text-align: right;
+        }
+        div#function {
+            margin: 200px;
+            padding: 50px;
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"><p id="content"></p></div>
+    <div id="function">Vai Aparecer Aqui</div>
+    <script>
+        const person = {
+            firstName: 'Yza',
+            lastName: 'Cosméticos',
+            age: '30',
+            eyesColor: 'black',
+        }
+        document.getElementById("content").innerHTML = person.firstName +" "+ person.lastName;
+        const person2 = {
+            firstName:'Jaciel',
+            lastName:'Caitité',
+            id: '20654',
+            fullName: function fullName() {
+                return this.firstName + ' '+ this.lastName;
+            }
+        }
+        document.getElementById("function").innerHTML = person2.fullName()
+    </script>
+</body>
+</html>
