@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,19 @@
 </head>
 <body>
     <p id="demo"></p>
+    <div id="aspas"></div>
+    <div id="tamanho"></div>
+    <div id="unico"></div>
     <script>
-        var X
+        var x
         x = 500
         document.getElementById("demo").innerHTML = " O valor da variável é " + x + "."
+        y = "Hello 'Jaciel' World."
+        let tamanho = y.length
+        document.getElementById("tamanho").innerHTML = tamanho
+        document.getElementById("aspas").innerHTML = y
+
+        
     </script>
 </body>
 </html>
